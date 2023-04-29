@@ -1,0 +1,34 @@
+name: Build Site and Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  FIREBASE_PROJECT_ID: website-justus-inhoffen
+
+jobs:
+  build_and_deploy:
+    name: Build Site and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Build Site with Jekyll (production)
+        if: github.ref == 'refs/heads/main'
+        run: bundle exec jekyll build
+      - name: Build Site with Jekyll (development)
+        if: github.event_name == 'pull_request'
+        run: bundle exec jekyll build
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_JUSTUS_INHOFFEN }}'
+          channelId: live
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
