@@ -15,4 +15,4 @@ Previously, I worked as a Data Scientist at the <a href="https://www.dnb.nl/en/r
 
 My <a href="{{ site.baseurl }}/assets/files/pgp/public.key" target="_blank">Public PGP Key</a>'s fingerprint is `F5E7 3572 0926 74EE 3AAB 29B7 FC38 00AB A913 2A90`.
 
-
+<small>Last modified at {% last_modified_at %}.</small>

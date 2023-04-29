@@ -5,17 +5,33 @@ position: Ph.D. Student
 affiliation: DIW Berlin; Vrije Universiteit Amsterdam; De Nederlandsche Bank
 email: jinhoffen@diw.de
 baseurl: ""
-url: https://www.justus-inhoffen.com
+url: http://website-justus-inhoffen.web.app
+
+# Plugin settings
+plugins:
+  - jekyll-minifier
+  - jekyll-webp
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+
+last-modified-at:
+    date-format: '%y-%b-%d'
+
+webp:
+  enabled: true
+  quality: 80
+  img_dir: ["/assets/"]
+  nested: true
+  formats: [".jpeg", ".jpg", ".png"]
+  regenerate: false
 
 # Search Engine Optimization (SEO)
 seo:
   landing_page_title: Justus Inhoffen
   description: Financial Economist and Data Scientist
-  canonical: https://minimal-light-theme.yliu.me/
 
-# Links 
+# Social Media 
 google_scholar: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
-# cv_link: assets/files/cv/curriculum_vitae.pdf
 github_link: https://github.com/jinhoffen
 linkedin: https://www.linkedin.com/in/jinhoffen/
 
@@ -34,12 +50,6 @@ favicon_dark: favicon-dark.png
 
 # Footnote
 enable_footnote: false
-
-# Google Analytics ID
-# google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# remote_theme: yaoyao-liu/minimal-light
 
 # The following files will be removed from the generated website.
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "firebase.json", "package.json", "package-lock.json"]
