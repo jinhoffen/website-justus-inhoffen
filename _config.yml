@@ -1,0 +1,51 @@
+# Basic Information 
+title: Justus Inhoffen
+profile: Financial Economist & Data Scientist
+position: Ph.D. Student
+affiliation: DIW Berlin; Vrije Universiteit Amsterdam; De Nederlandsche Bank
+email: jinhoffen@diw.de
+baseurl: ""
+url: https://www.justus-inhoffen.com
+
+# Search Engine Optimization (SEO)
+seo:
+  landing_page_title: Justus Inhoffen
+  description: Financial Economist and Data Scientist
+  canonical: https://minimal-light-theme.yliu.me/
+
+# Links 
+google_scholar: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
+# cv_link: assets/files/cv/curriculum_vitae.pdf
+github_link: https://github.com/jinhoffen
+linkedin: https://www.linkedin.com/in/jinhoffen/
+
+social_media:
+  - type: google_scholar
+    url: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
+  - type: github
+    url: https://github.com/jinhoffen
+  - type: linkedin
+    url: https://www.linkedin.com/in/jinhoffen/
+
+# Images
+avatar: profile.png
+favicon: favicon.png
+favicon_dark: favicon-dark.png
+
+# Footnote
+enable_footnote: false
+
+# Google Analytics ID
+# google_analytics: UA-111540567-4
+
+# Use this project as a remote theme for GitHub Pages
+# remote_theme: yaoyao-liu/minimal-light
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - minimal-light.gemspec
+  - node_modules

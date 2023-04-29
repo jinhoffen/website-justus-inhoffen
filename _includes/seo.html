@@ -1,0 +1,99 @@
+{% capture currentTitle %}
+    {% if page.internal_id == "index" %}
+        {{ site.title }} | {{ site.profile }}
+    {% elsif page.title %}
+        {{ site.title | escape }} | {{ page.title | escape }}
+    {% else %}
+        {{ site.title | escape }}
+    {%endif %}
+{% endcapture %}
+{% capture currentDescription %}
+    {% if page.description %}
+        {{ page.description }}
+    {% else %}
+        {{ site.seo.description }}
+    {% endif %}
+{% endcapture %}
+{% capture personId %}
+    {{ '/#personInhoffen' | prepend: site.url }}
+{% endcapture %}
+{% capture currentUrl %}
+    {{ site.url }}
+    {{ page.url | replace:'index.html','' | strip }}
+{% endcapture %}
+<title>{{ currentTitle }}</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ currentTitle }}">
+<meta property="og:site_name" content="{{ currentTitle }}">
+<meta name="description" content="{{ currentDescription }}">
+<meta property="og:description" content="{{ currentDescription }}">
+<link rel="canonical" href="{{ currentUrl }}">
+<meta name="generator" content="Jekyll {{ jekyll.version }}">
+<meta property="og:url" content="{{ currentUrl }}">
+<meta property="og:image" content="{{ site.url }}/assets/files/portrait/justus-inhoffen.jpeg">
+<meta property="og:image:alt" content="{{ site.title }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="669">
+<meta property="og:image:height" content="709">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{{ site.title }}e">
+<meta name="twitter:title" content="{{ currentTitle }}">
+<meta name="twitter:domain" content="{{ currentUrl }}">
+<meta name="twitter:image:src" content="{{ site.url }}/assets/files/portrait/justus-inhoffen.jpeg">
+<script type="application/ld+json">
+[
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "{{ personId }}",
+        "name": "{{ site.title }}",
+        "jobTitle": "Data Scientist",
+        "alumniOf": "Vrije Universiteit Amsterdam",
+        "sameAs" : [
+            "https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ",
+            "https://github.com/jinhoffen",
+            "https://www.linkedin.com/in/jinhoffen/"
+      ]
+    },
+    {
+        "@context": "http://schema.org",
+        {% if page.internal_id == "index" %}
+        "@type": "WebSite",
+        {% else %}
+        "@type": "WebPage",
+        {% endif %}
+        {% unless page.internal_id == "index" && !page.title %}
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "{{ site.url }}",
+                        "name": "{{ site.seo.landing_page_title }}",
+                        "url": "{{ site.url }}"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "{{ currentUrl }}",
+                        "name": "{{ page.title }}",
+                        "url": "{{ currentUrl }}"
+                    }
+                }
+            ]
+        },
+        {% endunless %}
+        "name": "{{ currentTitle }}",
+        "headline": "{{ page.title }}",
+        "description": "{{ currentDescription }}",
+        "url": "{{ currentUrl }}",
+        "about": { "@id": "{{ personId }}"}
+    }
+]
+</script>
+<!-- google site verification -->
+<!-- <meta name="google-site-verification" content="{{ site.google_site_verification }}" > -->

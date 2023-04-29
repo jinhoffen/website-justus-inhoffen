@@ -1,0 +1,74 @@
+publications:
+  - id: InhoffenSiemrothZahn_SocialInteractions
+    title: "Minimum prices and social interactions: Evidence from the German renewable energy program"
+    url: https://dx.doi.org/10.1016/j.eneco.2018.11.034
+    teaser: teaser.png
+    badge: Public Economics
+    journal: Energy Economics
+    volume: 78
+    pages: 350-364
+    year: 2019
+    coauthors:
+      - name: Christoph Siemroth
+        url: https://sites.google.com/site/csiemroth/
+      - name: Philipp Zahn
+        url: https://www.philipp-zahn.com
+    code: https://dx.doi.org/10.17632/668gj7dwn7.1
+    wp: https://repository.essex.ac.uk/23554/1/peereffects_v38-revision2.pdf
+workingpapers:
+  - id: ArtigaGonzalezDyakovInhoffenWipplinger_CrowdingMutualFunds
+    title: Crowding of International Mutual Funds
+    url: http://dx.doi.org/10.2139/ssrn.4412733
+    teaser: teaser.png
+    presentation: presentation_20210419.pdf
+    badge: Mutual Funds
+    coauthors:
+      - name: Tanja Artiga González
+        url: https://sites.google.com/view/tartigagonzalez
+      - name: Teodor Dyakov
+        url: http://teodordyakov.work
+      - name: Evert Wipplinger
+  - id: InhoffenVanLelyveld_CollateralReuse
+    title: Re-use and Safe Asset Scarcity in the European Repo Market
+    teaser: teaser.png
+    badge: Money Market
+    coauthors:
+      - name: Iman van Lelyveld
+        url: https://imanvanlelyveld.com
+  - id: Inhoffen_RiskSpillover
+    title: Risk Spillovers in the Eurozone Financial Sectors
+    teaser: teaser.png
+    badge: Financial Stability
+policy:
+  - title: "Low for Long: Side Effects of Negative Interest Rates"
+    url: https://data.europa.eu/doi/10.2861/980796
+    journal: European Parliament, Directorate-General for Internal Policies of the Union
+    year: 2021
+    coauthors:
+      - name: Atanas Pekanov
+        url: https://sites.google.com/view/atanaspekanov/home
+      - name: Thomas Url
+        url: https://www.wifo.ac.at/thomas_url
+  - title: "Financial stability: New, detailed datasets allow for innovation of stress tests"
+    url: https://doi.org/10.18723/diw_dwr:2020-3-1
+    journal: DIW Weekly Report
+    year: 2020
+    coauthors:
+      - name: Iman van Lelyveld
+        url: https://imanvanlelyveld.com
+  - title: "Indirect Interconnectedness - Portfolio Overlap in the Euro Area"
+    url: https://www.fsb.org/wp-content/uploads/P040219.pdf
+    journal: Global Monitoring Report on Non-Bank Financial Intermediation 2018
+    pages: 36-38
+    year: 2019
+    coauthors:
+      - name: Nick Bootsma
+      - name: Peter Wierts
+        url: https://www.dnb.nl/en/research/personal-pages/peter-wierts/
+      - name: Iman van Lelyveld
+        url: https://imanvanlelyveld.com
+  - title: "Stability implications of financial interconnectedness under the Capital Markets Union"
+    url: https://www.diw.de/documents/publikationen/73/diw_01.c.620320.de/DIW_Roundup_129_en.pdf
+    journal: "DIW Roundup: Politik im Fokus"
+    pages: 129
+    year: 2019
