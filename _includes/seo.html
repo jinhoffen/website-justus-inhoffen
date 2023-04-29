@@ -95,5 +95,9 @@
     }
 ]
 </script>
-<!-- google site verification -->
-<!-- <meta name="google-site-verification" content="{{ site.google_site_verification }}" > -->
+<!-- indexing -->
+{% if jekyll.environment == "production" %}
+<meta name="robots" content="index,follow">
+{% else %}
+<meta name="robots" content="noindex">
+{% endif %}
