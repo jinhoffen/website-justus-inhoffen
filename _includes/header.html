@@ -1,0 +1,47 @@
+<header>
+  {% if site.avatar %}
+  <a class="image avatar" href="{{ '/' | site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="avatar"></a>
+  {% endif %}
+  <h1><a href="{{ '/' | site.baseurl }}">{{ site.title }}</a></h1>
+  {% if site.position %}
+  <p id="position">{{ site.position }}</p>
+  {% endif %}
+  {% if site.affiliation %}
+  <ul id="affiliations">
+  {% assign affiliations = site.affiliation | split: '; ' %}
+  {% for affiliation in affiliations %}
+    <li>{{ affiliation }}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  {% if site.email %}
+  <address>
+  <p id="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </address>
+  {% endif %}
+  <nav>
+    <ul>
+      <li><a href="{{ '/' | site.baseurl }}">About</a></li>
+      <li><a href="{{ '/research.html' | prepend: site.baseurl }}">Research</a></li>
+      <li><a href="{{ '/blog.html' | prepend: site.baseurl }}">Blog</a></li>
+    </ul>
+  </nav>
+  <ul id="social-media">
+    {% for social in site.social_media %}
+      {% if social.type == "google_scholar" %}
+        {% assign class = "ai ai-google-scholar" %}
+        {% assign label = "Visit Justus' Google Scholar profile" %}
+      {% elsif social.type == "cv" %}
+        {% assign class = "ai ai-cv" %}
+        {% assign label = "See Justus' Curriculum Vitae" %}
+      {% elsif social.type == "github" %}
+        {% assign class = "fab fa-github" %}
+        {% assign label = "Visit Justus' GitHub Profile" %}
+      {% elsif social.type == "linkedin" %}
+        {% assign class = "fab fa-linkedin" %}
+        {% assign label = "Visit Justus' LinkedIn Profile" %}
+      {% endif %}
+    <li><a href="{{ social.url }}" aria-label="{{ label }}" rel="noopener"><i class="{{ class }}" style="font-size:1.2rem"></i></a></li>
+    {% endfor %}
+  </ul>
+</header>

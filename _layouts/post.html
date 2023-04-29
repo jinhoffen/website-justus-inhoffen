@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      <section>
+      <a href="{{ '/blog.html' | prepend: site.baseurl }}">Return</a>
+      <article class="markdown-body">
+        {{ content }}
+      </article>
+      {% if site.enable_footnote %}
+        {% include footer.html %}
+      {% endif %}
+      </section>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
