@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request: {}
 
 env:
   FIREBASE_PROJECT_ID: website-justus-inhoffen
@@ -15,7 +16,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1' # not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
@@ -26,9 +27,20 @@ jobs:
         if: github.event_name == 'pull_request'
         run: bundle exec jekyll build
       - name: Deploy to Firebase Hosting
+        id: firebase-deploy-prod
+        if: github.ref == 'refs/heads/main'
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_JUSTUS_INHOFFEN }}'
           channelId: live
           projectId: ${{ env.FIREBASE_PROJECT_ID }}
+      - name: Deploy to Firebase Hosting (dev preview channel)
+        id: firebase-deploy-preview
+        if: github.event_name == 'pull_request'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_JUSTUS_INHOFFEN }}'
+          projectId: ${{ env.FIREBASE_PROJECT_ID }}
+          expires: 7d

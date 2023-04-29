@@ -1,6 +1,6 @@
 # Basic Information 
 title: Justus Inhoffen
-profile: Financial Economist & Data Scientist
+profession: Financial Economist & Data Scientist
 position: Ph.D. Student
 affiliation: DIW Berlin; Vrije Universiteit Amsterdam; De Nederlandsche Bank
 email: jinhoffen@diw.de
@@ -42,10 +42,4 @@ enable_footnote: false
 # remote_theme: yaoyao-liu/minimal-light
 
 # The following files will be removed from the generated website.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - minimal-light.gemspec
-  - node_modules
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "firebase.json", "package.json", "package-lock.json"]
