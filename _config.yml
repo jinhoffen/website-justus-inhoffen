@@ -1,24 +1,27 @@
-# Basic Information 
+# Basic Information
 title: Justus Inhoffen
 profession: Financial Economist & Data Scientist
 position: Ph.D. Student
-affiliation: DIW Berlin; Vrije Universiteit Amsterdam; De Nederlandsche Bank
+affiliations:
+  - DIW Berlin
+  - Vrije Universiteit Amsterdam
+  - De Nederlandsche Bank
 email: jinhoffen@diw.de
-baseurl: ""
-url: https://www.justus-inhoffen.com
+
+# build settings
+markdown: kramdown
+
+# plugins
+plugins:
+  - jekyll-minifier
+  - jekyll-webp
+  - jekyll-sitemap
 
 # Search Engine Optimization (SEO)
-seo:
-  landing_page_title: Justus Inhoffen
-  description: Financial Economist and Data Scientist
-  canonical: https://minimal-light-theme.yliu.me/
+landing_page_title: Justus Inhoffen
+description: Financial Economist and Data Scientist
 
-# Links 
-google_scholar: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
-# cv_link: assets/files/cv/curriculum_vitae.pdf
-github_link: https://github.com/jinhoffen
-linkedin: https://www.linkedin.com/in/jinhoffen/
-
+# Links
 social_media:
   - type: google_scholar
     url: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
@@ -30,16 +33,45 @@ social_media:
 # Images
 avatar: profile.png
 favicon: favicon.png
-favicon_dark: favicon-dark.png
+
+# minifier plugin
+jekyll-minifier:
+  exclude: "**.css"
+  preserve_php: false               # Default: false
+  remove_spaces_inside_tags: true   # Default: true
+  remove_multi_spaces: true         # Default: true
+  remove_comments: true             # Default: true
+  remove_intertag_spaces: true      # Default: false - breaks inline svg
+  remove_quotes: true               # Default: false
+  compress_css: true                # Default: true
+  compress_javascript: true         # Default: true
+  simple_doctype: false             # Default: false
+  remove_script_attributes: false   # Default: false
+  remove_style_attributes: false    # Default: false
+  remove_link_attributes: false     # Default: false
+  remove_form_attributes: false     # Default: false
+  remove_input_attributes: false    # Default: false
+  remove_javascript_protocol: false # Default: false
+  remove_http_protocol: false       # Default: false
+  remove_https_protocol: false      # Default: false
+  preserve_line_breaks: false       # Default: false
+  simple_boolean_attributes: false  # Default: false
+  compress_js_templates: true       # Default: false
+  uglifier_args:
+    harmony: true                   # Default: false - use ES6 syntax
+
+# WebP Plugin
+webp:
+  enabled: true
+  quality: 80
+  img_dir: ["/assets/img", "/assets/files/articles", "/assets/files/portrait"]
+  formats: [".jpeg", ".jpg"]
+  gifs: [".gif"]
+  regenerate: false
+  exclude: ["justus-inhoffen.jpeg"]
 
 # Footnote
 enable_footnote: false
-
-# Google Analytics ID
-# google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# remote_theme: yaoyao-liu/minimal-light
 
 # The following files will be removed from the generated website.
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor", "README.md", "firebase.json", "package.json", "package-lock.json"]
