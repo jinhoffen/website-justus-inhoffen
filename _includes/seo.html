@@ -1,26 +1,25 @@
-{% capture currentTitle %}
-    {% if page.internal_id == "index" %}
+{%- capture currentTitle -%}
+    {%- if page.internal_id == "index" -%}
         {{ site.title }} | {{ site.profession }}
-    {% elsif page.title %}
+    {%- elsif page.title -%}
         {{ site.title | escape }} | {{ page.title | escape }}
-    {% else %}
+    {%- else -%}
         {{ site.title | escape }}
-    {%endif %}
-{% endcapture %}
-{% capture currentDescription %}
-    {% if page.description %}
+    {%-endif -%}
+{%- endcapture -%}
+{%- capture currentDescription -%}
+    {%- if page.description -%}
         {{ page.description }}
-    {% else %}
-        {{ site.seo.description }}
-    {% endif %}
-{% endcapture %}
-{% capture personId %}
+    {%- else -%}
+        {{ site.description }}
+    {%- endif -%}
+{%- endcapture -%}
+{%- capture personId -%}
     {{ '/#personInhoffen' | prepend: site.url }}
-{% endcapture %}
-{% capture currentUrl %}
-    {{ site.url }}
-    {{ page.url | replace:'index.html','' | strip }}
-{% endcapture %}
+{%- endcapture -%}
+{%- capture currentUrl -%}
+    {{ site.url }}{{ page.url | replace:'index.html','' | strip }}
+{%- endcapture -%}
 <title>{{ currentTitle }}</title>
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ currentTitle }}">
@@ -57,12 +56,12 @@
     },
     {
         "@context": "http://schema.org",
-        {% if page.internal_id == "index" %}
+        {%- if page.internal_id == "index" -%}
         "@type": "WebSite",
-        {% else %}
+        {%- else -%}
         "@type": "WebPage",
-        {% endif %}
-        {% unless page.internal_id == "index" && !page.title %}
+        {%- endif -%}
+        {%- unless page.internal_id == "index" && !page.title -%}
         "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -71,7 +70,7 @@
                     "position": 1,
                     "item": {
                         "@id": "{{ site.url }}",
-                        "name": "{{ site.seo.landing_page_title }}",
+                        "name": "{{ site.landing_page_title }}",
                         "url": "{{ site.url }}"
                     }
                 },
@@ -86,7 +85,7 @@
                 }
             ]
         },
-        {% endunless %}
+        {%- endunless -%}
         "name": "{{ currentTitle }}",
         "headline": "{{ page.title }}",
         "description": "{{ currentDescription }}",
