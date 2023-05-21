@@ -6,7 +6,7 @@
     <li>
       <div class="pub-row">
         <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-          <img src="assets/files/articles/{{ article.id }}/{{ article.teaser }}" class="teaser img-fluid z-depth-1">
+          <img alt="Teaser image for article {{ article.title }}" src="assets/files/articles/{{ article.id }}/{{ article.teaser }}" class="teaser img-fluid z-depth-1">
           <abbr class="badge">{{ article.badge }}</abbr>
         </div>
         <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -22,7 +22,7 @@
             {% else %}
             {{ coauthor.name }}
             {% endif %}
-            {% if forloop.last %}{% else %},{% endif %} 
+            {% if forloop.last %}{% else %},{% endif %}
             {% endfor %}
             <br>
           {% endif %}

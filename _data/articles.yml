@@ -18,20 +18,22 @@ publications:
 workingpapers:
   - id: ArtigaGonzalezDyakovInhoffenWipplinger_CrowdingMutualFunds
     title: Crowding of International Mutual Funds
-    url: http://dx.doi.org/10.2139/ssrn.4412733
+    url: https://dx.doi.org/10.2139/ssrn.4412733
     teaser: teaser.png
-    presentation: presentation_20210419.pdf
     badge: Mutual Funds
+    status: Revise & Resubmit
     coauthors:
       - name: Tanja Artiga González
         url: https://sites.google.com/view/tartigagonzalez
       - name: Teodor Dyakov
-        url: http://teodordyakov.work
+        url: https://teodordyakov.work
       - name: Evert Wipplinger
+    presentation: presentation_20210419.pdf
   - id: InhoffenVanLelyveld_CollateralReuse
     title: Re-use and Safe Asset Scarcity in the European Repo Market
     teaser: teaser.png
     badge: Money Market
+    status: Coming Soon
     coauthors:
       - name: Iman van Lelyveld
         url: https://imanvanlelyveld.com
@@ -39,6 +41,7 @@ workingpapers:
     title: Risk Spillovers in the Eurozone Financial Sectors
     teaser: teaser.png
     badge: Financial Stability
+    status: Coming Soon
 policy:
   - title: "Low for Long: Side Effects of Negative Interest Rates"
     url: https://data.europa.eu/doi/10.2861/980796
