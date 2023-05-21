@@ -7,7 +7,7 @@ internal_id: research
 ## Research Interests
 
 - **Capital Markets**
-- **Financial Architecture**
+- **Financial Stability**
 - **Machine Learning**
 
 {% include_relative _includes/publications.md %}
