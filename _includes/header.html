@@ -6,10 +6,9 @@
   {% if site.position %}
   <p id="position">{{ site.position }}</p>
   {% endif %}
-  {% if site.affiliation %}
+  {% if site.affiliations %}
   <ul id="affiliations">
-  {% assign affiliations = site.affiliation | split: '; ' %}
-  {% for affiliation in affiliations %}
+  {% for affiliation in site.affiliations %}
     <li>{{ affiliation }}</li>
   {% endfor %}
   </ul>
@@ -23,7 +22,10 @@
     <ul>
       <li><a href="{{ '/' | site.baseurl }}">About</a></li>
       <li><a href="{{ '/research.html' | prepend: site.baseurl }}">Research</a></li>
+      {% assign psize = site.posts | size %}
+      {% if psize > 0 %}
       <li><a href="{{ '/blog.html' | prepend: site.baseurl }}">Blog</a></li>
+      {% endif %}
     </ul>
   </nav>
   <ul id="social-media">
@@ -41,7 +43,7 @@
         {% assign class = "fab fa-linkedin" %}
         {% assign label = "Visit Justus' LinkedIn Profile" %}
       {% endif %}
-    <li><a href="{{ social.url }}" aria-label="{{ label }}" rel="noopener"><i class="{{ class }}" style="font-size:1.2rem"></i></a></li>
+    <li><a href="{{ social.url }}" aria-label="{{ label }}" target="_blank" rel="noopener"><i class="{{ class }}" style="font-size:1.2rem"></i></a></li>
     {% endfor %}
   </ul>
 </header>
