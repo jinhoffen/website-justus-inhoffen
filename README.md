@@ -1,7 +1,22 @@
-# Personal Website
+# My Personal Website
+
+[![Build Status](https://github.com/jinhoffen/website-justus-inhoffen/actions/workflows/build_deploy.yml/badge.svg)](https://github.com/jinhoffen/website-justus-inhoffen/actions)
 
 This is the repo of my personal website.
-It is built with [Jekyll](https://jekyllrb.com) and the theme is an extension of [`minimal-light`](https://github.com/yaoyao-liu/minimal-light).
+The page is built with [Jekyll](https://jekyllrb.com).
+The production version can be found [here](https://website-justus-inhoffen.web.app).
+
+Table of Contents:
+
+- [My Personal Website](#my-personal-website)
+  - [Build](#build)
+    - [Ruby](#ruby)
+    - [Bundler and Jekyll](#bundler-and-jekyll)
+    - [Develop](#develop)
+    - [Build Site](#build-site)
+  - [Continuous Deployment](#continuous-deployment)
+  - [Frameworks and Libraries](#frameworks-and-libraries)
+  - [License](#license)
 
 ## Build
 
@@ -80,3 +95,22 @@ For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart
 With the following command the website will be built and exported to `_site`
 
     bundle exec jekyll build
+
+## Continuous Deployment
+
+Every Pull-Request automatically deploys to a temporary Firebase Staging environment (link posted as comment in the PR by Github Actions).
+
+Every main commit triggers deployment to the live channel of [Firbase Hosting](https://website-justus-inhoffen.web.app) through [Github Actions](https://github.com/jinhoffen/website-justus-inhoffen/actions).
+Only this build is executed with the production flag.
+
+Note that the main branch is protected in GitHub and only allows merges through pull requests.
+
+## Frameworks and Libraries
+
+* [Jekyll](https://jekyllrb.com) with plugins Minifier, Webp, Last-Modified, Sitemap
+* Theme [`minimal-light`](https://github.com/yaoyao-liu/minimal-light)
+* [Firebase Hosting](https://www.firebase.com)
+
+## License
+
+Proprietary: Justus Inhoffen 2023

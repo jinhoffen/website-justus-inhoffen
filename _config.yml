@@ -8,14 +8,19 @@ affiliations:
   - De Nederlandsche Bank
 email: jinhoffen@diw.de
 
-# build settings
+# Build settings
 markdown: kramdown
 
-# plugins
+# Plugins
 plugins:
   - jekyll-minifier
   - jekyll-webp
   - jekyll-sitemap
+  - jekyll-last-modified-at
+
+# Modified-at plugin
+last-modified-at:
+    date-format: '%b %d, %Y'
 
 # Search Engine Optimization (SEO)
 landing_page_title: Justus Inhoffen
@@ -34,7 +39,7 @@ social_media:
 avatar: profile.png
 favicon: favicon.png
 
-# minifier plugin
+# Minifier plugin
 jekyll-minifier:
   exclude: "**.css"
   preserve_php: false               # Default: false

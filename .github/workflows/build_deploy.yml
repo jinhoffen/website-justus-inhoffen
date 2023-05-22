@@ -25,7 +25,10 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
       - name: Build Site with Jekyll (development)
         if: github.event_name == 'pull_request'
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build -t
+      - name: Run htmlproofer
+        run: |
+          bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 301,302,999
       - name: Deploy to Firebase Hosting
         id: firebase-deploy-prod
         if: github.ref == 'refs/heads/main'

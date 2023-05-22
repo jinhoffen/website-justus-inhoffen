@@ -14,3 +14,5 @@ I am supervised by <a href="https://imanvanlelyveld.com" target="_blank" rel="no
 Previously, I worked as a Data Scientist at the <a href="https://www.dnb.nl/en/research/data-science-hub/" target="_blank" rel="noopener">Data Science Hub</a> of the <a href="https://www.dnb.nl/en/" target="_blank" rel="noopener">Dutch Central Bank</a>, where I continue to be a Visiting researcher, and as a Quantitative Analyst at KPMG.
 
 My <a href="{{ site.baseurl }}/assets/files/pgp/public.key">Public PGP Key</a>'s fingerprint is `F5E7 3572 0926 74EE 3AAB 29B7 FC38 00AB A913 2A90`.
+
+<small>Last modified at {% last_modified_at %}.</small>
