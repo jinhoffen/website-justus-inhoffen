@@ -4,7 +4,7 @@
 
 This is the repo of my personal website.
 The page is built with [Jekyll](https://jekyllrb.com).
-The production version can be found [here](https://website-justus-inhoffen.web.app).
+The production version can be found [here](https://www.justus-inhoffen.com).
 
 Table of Contents:
 
