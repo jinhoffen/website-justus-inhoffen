@@ -5,6 +5,9 @@ Gemfile.lock
 *.gem
 .jekyll-cache
 
+# Development
+_config.dev.yml
+
 # OSX
 .DS_Store
 

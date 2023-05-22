@@ -4,7 +4,7 @@
 
 This is the repo of my personal website.
 The page is built with [Jekyll](https://jekyllrb.com).
-The production version can be found [here](https://website-justus-inhoffen.web.app).
+The production version can be found [here](https://www.justus-inhoffen.com).
 
 Table of Contents:
 
@@ -73,7 +73,7 @@ Install the `bundler`, an environment manager for Ruby projects:
 You may want to set the default gem path, so you don't need `sudo`
 
     bundle config path vendor/bundle
-    
+
 In the project root folder, install all the dependencies with
 
     bundle install
@@ -86,7 +86,7 @@ You should be able to run jekyll now with
 
 With this command a development web-server will be started on [http://localhost:4000](http://localhost:4000)
 
-    bundle exec jekyll serve --livereload
+    JEKYLL_ENV=production bundle exec jekyll serve --livereload --config "_config.yml"
 
 For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart/) in the Jekyll docs.
 

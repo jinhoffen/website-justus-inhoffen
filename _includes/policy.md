@@ -9,12 +9,12 @@
       {% if article.coauthors %}
       with
         {% for coauthor in article.coauthors %}
-        {% if coauthor.url %}
+        {%- if coauthor.url -%}
         <a href="{{ coauthor.url }}" target="_blank" rel="noopener">{{ coauthor.name }}</a>
-        {% else %}
+        {%- else -%}
         {{ coauthor.name }}
-        {% endif %}
-        {% if forloop.last %}{% else %},{% endif %} 
+        {%- endif -%}
+        {% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
         <br>
       {% endif %}

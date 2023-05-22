@@ -6,35 +6,34 @@
     <li>
       <div class="pub-row">
         <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-          <img src="assets/files/articles/{{ article.id }}/{{ article.teaser }}" class="teaser img-fluid z-depth-1">
+          <img alt="Teaser image for article {{ article.title }}" src="assets/files/articles/{{ article.id }}/{{ article.teaser }}" class="teaser img-fluid z-depth-1">
           <abbr class="badge">{{ article.badge }}</abbr>
         </div>
         <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
           <div class="title">
-            {% if article.coauthors %}
+            {% if article.url %}
             <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
             {% else %}
             {{ article.title }}
             {% endif %}
           </div>
-        <div class="author">
-          {% if article.coauthors %}
-          with
-            {% for coauthor in article.coauthors %}
-            {% if coauthor.url %}
-            <a href="{{ coauthor.url }}" target="_blank" rel="noopener">{{ coauthor.name }}</a>
-            {% else %}
-            {{ coauthor.name }}
+          <div class="author">
+            {% if article.coauthors %}
+            with
+              {% for coauthor in article.coauthors %}
+              {% if coauthor.url %}
+              <a href="{{ coauthor.url }}" target="_blank" rel="noopener">{{ coauthor.name }}</a>
+              {% else %}
+              {{ coauthor.name }}
+              {% endif %}
+              {% if forloop.last %}{% else %},{% endif %}
+              {% endfor %}
+              <br>
             {% endif %}
-            {% if forloop.last %}{% else %},{% endif %} 
-            {% endfor %}
-            <br>
-          {% endif %}
-        </div>
+          </div>
           <div class="periodical">
-            {% if article.url %}
-            {% else %}
-            <em>Coming Soon</em>
+            {% if article.status %}
+            <em>{{ article.status }}</em>
             {% endif %}
           </div>
           <div class="links">
