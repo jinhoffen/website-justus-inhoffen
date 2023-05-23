@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+permalink: /index.html
 internal_id: index
 ---
 
