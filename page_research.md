@@ -2,6 +2,7 @@
 layout: default
 title: Research
 permalink: /research/
+description: Research
 internal_id: research
 ---
 
