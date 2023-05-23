@@ -16,7 +16,6 @@ Table of Contents:
     - [Build Site](#build-site)
   - [Continuous Deployment](#continuous-deployment)
   - [Frameworks and Libraries](#frameworks-and-libraries)
-  - [License](#license)
 
 ## Build
 
@@ -110,7 +109,3 @@ Note that the main branch is protected in GitHub and only allows merges through 
 * [Jekyll](https://jekyllrb.com) with plugins Minifier, Webp, Last-Modified, Sitemap
 * Theme [`minimal-light`](https://github.com/yaoyao-liu/minimal-light)
 * [Firebase Hosting](https://www.firebase.com)
-
-## License
-
-Proprietary: Justus Inhoffen 2023
