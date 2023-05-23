@@ -21,10 +21,10 @@
   <nav>
     <ul>
       <li><a href="{{ '/' | site.baseurl }}">About</a></li>
-      <li><a href="{{ '/research.html' | prepend: site.baseurl }}">Research</a></li>
+      <li><a href="{{ '/research' | prepend: site.baseurl }}">Research</a></li>
       {% assign psize = site.posts | size %}
       {% if psize > 0 %}
-      <li><a href="{{ '/blog.html' | prepend: site.baseurl }}">Blog</a></li>
+      <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
       {% endif %}
     </ul>
   </nav>

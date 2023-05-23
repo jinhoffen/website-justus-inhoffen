@@ -15,6 +15,7 @@ publications:
         url: https://www.philipp-zahn.com
     code: https://dx.doi.org/10.17632/668gj7dwn7.1
     wp: https://repository.essex.ac.uk/23554/1/peereffects_v38-revision2.pdf
+    abstract: Minimum prices above the competitive level can lead to allocative inefficiencies. We investigate whether this effect is more pronounced when decision makers are influenced by their social environment. Using data of minimum prices for renewable energy production in Germany, we test if individual decisions to install photovoltaic systems are affected by the investment decisions of others in the area. We implement a propensity score matching routine on municipality level and estimate that existing panels in the municipality increase the probability and number of further installations considerably, even in areas with minimal solar radiation. Thus, social interaction can add secondary inefficiencies to the known allocative problems of minimum prices. The social interaction effect is stronger in areas with more solar radiation and less unemployment. A larger number of existing systems and more concentrated installations increase the social effect further.
 workingpapers:
   - id: ArtigaGonzalezDyakovInhoffenWipplinger_CrowdingMutualFunds
     title: Crowding of International Mutual Funds
@@ -29,6 +30,7 @@ workingpapers:
         url: https://teodordyakov.work
       - name: Evert Wipplinger
     presentation: presentation_20210419.pdf
+    abstract: We study the relationship between crowding and performance in the active mutual fund industry. Using the equity holdings overlap of 17,364 global funds, we find that funds that crowd into the same stocks underperform passive benchmark funds by 1.4% per year. The negative returns to crowding can at least in part be explained by excess demand for liquidity and the associated discount for holding liquid stocks. We show that our measure of crowding contains novel information about performance that is not reflected in other variables that describe funds’ investment environment, such as fund size and style. Our findings suggest that crowding of investment opportunities is important for understanding diminishing returns.
   - id: InhoffenVanLelyveld_CollateralReuse
     title: Re-use and Safe Asset Scarcity in the European Repo Market
     teaser: teaser.png
@@ -37,11 +39,11 @@ workingpapers:
     coauthors:
       - name: Iman van Lelyveld
         url: https://imanvanlelyveld.com
+    abstract: This paper shows that dealer banks alleviate the scarcity of safe assets through intermediation in the European repo market. Using transaction data, we construct the first measure of the European collateral re-use rate at the bank and security level. We find that banks considerably increase re-use in response to a reduction in the free-floating amount of government bonds. Dealers accommodate clients’ demand for safe assets rather than for liquidity and make a profit through a spread in repo rates. Yet, dealers also re-use collateral to source liquidity by nego- tiating a positive haircut differential and thus become exposed to collateral runs. Our results contribute to the policy debate on trade-offs between shock absorption and financial stability risks of collateral re-use.
   - id: Inhoffen_RiskSpillover
     title: Risk Spillovers in the Eurozone Financial Sectors
     teaser: teaser.png
     badge: Financial Stability
-    status: Coming Soon
 policy:
   - title: "Low for Long: Side Effects of Negative Interest Rates"
     url: https://data.europa.eu/doi/10.2861/980796

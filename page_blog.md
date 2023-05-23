@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+permalink: /blog/
 description: Blog
 internal_id: blog
 ---
