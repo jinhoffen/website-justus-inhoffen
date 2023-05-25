@@ -1,49 +1,47 @@
-<header>
-  {% if site.avatar %}
-  <a class="image avatar" href="{{ '/' | site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="avatar"></a>
-  {% endif %}
-  <h1><a href="{{ '/' | site.baseurl }}">{{ site.title }}</a></h1>
-  {% if site.position %}
-  <p id="position">{{ site.position }}</p>
-  {% endif %}
-  {% if site.affiliations %}
-  <ul id="affiliations">
-  {% for affiliation in site.affiliations %}
-    <li>{{ affiliation }}</li>
-  {% endfor %}
+{%- if site.avatar -%}
+<a class="image avatar" href="{{ '/' | site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="avatar"></a>
+{%- endif -%}
+<h1><a href="{{ '/' | site.baseurl }}">{{ site.title }}</a></h1>
+{%- if site.position -%}
+<p id="job">{{ site.position }}</p>
+{%- endif -%}
+{%- if site.affiliations -%}
+<ul id="affiliations">
+{%- for affiliation in site.affiliations -%}
+  <li>{{ affiliation }}</li>
+{%- endfor -%}
+</ul>
+{%- endif -%}
+{%- if site.email -%}
+<address>
+<p id="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</address>
+{%- endif -%}
+<nav>
+  <ul>
+    <li><a href="{{ '/' | site.baseurl }}">About</a></li>
+    <li><a href="{{ '/research' | prepend: site.baseurl }}">Research</a></li>
+    {%- assign psize = site.posts | size -%}
+    {%- if psize > 0 -%}
+    <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+    {%- endif -%}
   </ul>
-  {% endif %}
-  {% if site.email %}
-  <address>
-  <p id="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-  </address>
-  {% endif %}
-  <nav>
-    <ul>
-      <li><a href="{{ '/' | site.baseurl }}">About</a></li>
-      <li><a href="{{ '/research' | prepend: site.baseurl }}">Research</a></li>
-      {% assign psize = site.posts | size %}
-      {% if psize > 0 %}
-      <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
-      {% endif %}
-    </ul>
-  </nav>
-  <ul id="social-media">
-    {% for social in site.social_media %}
-      {% if social.type == "google_scholar" %}
-        {% assign class = "ai ai-google-scholar" %}
-        {% assign label = "Visit Justus' Google Scholar profile" %}
-      {% elsif social.type == "cv" %}
-        {% assign class = "ai ai-cv" %}
-        {% assign label = "See Justus' Curriculum Vitae" %}
-      {% elsif social.type == "github" %}
-        {% assign class = "fab fa-github" %}
-        {% assign label = "Visit Justus' GitHub Profile" %}
-      {% elsif social.type == "linkedin" %}
-        {% assign class = "fab fa-linkedin" %}
-        {% assign label = "Visit Justus' LinkedIn Profile" %}
-      {% endif %}
-    <li><a href="{{ social.url }}" aria-label="{{ label }}" target="_blank" rel="noopener"><i class="{{ class }}" style="font-size:1.2rem"></i></a></li>
-    {% endfor %}
-  </ul>
-</header>
+</nav>
+<ul id="social-media">
+  {%- for social in site.social_media -%}
+    {%- if social.type == "google_scholar" -%}
+      {%- assign class = "ai ai-google-scholar" -%}
+      {%- assign label = "Visit Justus' Google Scholar profile" -%}
+    {%- elsif social.type == "cv" -%}
+      {%- assign class = "ai ai-cv" -%}
+      {%- assign label = "See Justus' Curriculum Vitae" -%}
+    {%- elsif social.type == "github" -%}
+      {%- assign class = "fab fa-github" -%}
+      {%- assign label = "Visit Justus' GitHub Profile" -%}
+    {%- elsif social.type == "linkedin" -%}
+      {%- assign class = "fab fa-linkedin" -%}
+      {%- assign label = "Visit Justus' LinkedIn Profile" -%}
+    {%- endif -%}
+  <li><a href="{{ social.url }}" aria-label="{{ label }}" target="_blank" rel="noopener"><i class="{{ class }}"></i></a></li>
+  {%- endfor -%}
+</ul>
