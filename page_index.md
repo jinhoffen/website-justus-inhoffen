@@ -5,7 +5,7 @@ permalink: /index.html
 internal_id: index
 ---
 
-# Data Scientist. Financial Economist. Researcher.
+# Welcome
 
 I am a Data Scientist and Financial Economist, currently finishing my Ph.D. dissertation at the <a href="https://www.diw.de/en" target="_blank" rel="noopener">German Institute for Economic Research</a> in Berlin and at the <a href="https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/departments/finance" target="_blank" rel="noopener">Vrije Universiteit Amsterdam</a>.
 I am supervised by <a href="https://imanvanlelyveld.com" target="_blank" rel="noopener">Iman van Lelyveld</a> and <a href="https://esmt.berlin/faculty-research/person/jorg-rocholl" target="_blank" rel="noopener">Jörg Rocholl</a>.
