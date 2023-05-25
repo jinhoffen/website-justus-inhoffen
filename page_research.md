@@ -19,7 +19,11 @@ internal_id: research
   <div class="pub-row">
     <div class="pub-teaser">
       <span class="badge">{{ article.badge }}</span>
-      <img alt="Teaser image for article {{ article.title }}" src="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/{{ article.teaser }}">
+      <picture>
+        <source srcset="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.{{ article.teaser_file_extension }}" type="image/{{ article.teaser_file_extension }}">
+        <source srcset="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.webp" type="image/webp">
+        <img src="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.webp" alt="Teaser image for article {{ article.title }}" >
+      </picture>
     </div>
     <div class="pub-details">
       <ol>
@@ -72,7 +76,11 @@ internal_id: research
   <div class="pub-row">
     <div class="pub-teaser">
       <span class="badge">{{ article.badge }}</span>
-      <img alt="Teaser image for article {{ article.title }}" src="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/{{ article.teaser }}">
+      <picture>
+        <source srcset="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.{{ article.teaser_file_extension }}" type="image/{{ article.teaser_file_extension }}">
+        <source srcset="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.webp" type="image/webp">
+        <img src="{{ site.baseurl }}/assets/files/articles/{{ article.id }}/teaser.webp" alt="Teaser image for article {{ article.title }}" >
+      </picture>
     </div>
     <div class="pub-details">
       <ol>

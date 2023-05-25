@@ -35,10 +35,6 @@ social_media:
   - type: google_scholar
     url: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
 
-# Images
-avatar: profile.png
-favicon: favicon.png
-
 # Minifier plugin
 jekyll-minifier:
   exclude: "**.css"
@@ -69,8 +65,9 @@ jekyll-minifier:
 webp:
   enabled: true
   quality: 80
-  img_dir: ["/assets/img", "/assets/files/articles", "/assets/files/portrait"]
-  formats: [".jpeg", ".jpg"]
+  nested: true
+  img_dir: ["/assets/"]
+  formats: [".jpeg", ".jpg",".png"]
   gifs: [".gif"]
   regenerate: false
   exclude: ["justus-inhoffen.jpeg"]

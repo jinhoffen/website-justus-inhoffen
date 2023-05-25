@@ -1,6 +1,8 @@
-{%- if site.avatar -%}
-<a class="image avatar" href="{{ '/' | site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="avatar"></a>
-{%- endif -%}
+<picture>
+  <source srcset="{{ site.baseurl }}/assets/img/profile.png" type="image/png">
+  <source srcset="{{ site.baseurl }}/assets/img/profile.webp" type="image/webp">
+  <a class="image avatar" href="{{ '/' | site.baseurl }}"><img src="{{ site.baseurl }}/assets/img/profile.webp" alt="{{ site.title }}"></a>
+</picture>
 <h1><a href="{{ '/' | site.baseurl }}">{{ site.title }}</a></h1>
 {%- if site.position -%}
 <p id="job">{{ site.position }}</p>
