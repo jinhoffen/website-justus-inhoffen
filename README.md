@@ -4,6 +4,7 @@
 
 This is the repo of my personal website.
 The page is built with [Jekyll](https://jekyllrb.com).
+The theme is based on the [`minimal-light`](https://github.com/yaoyao-liu/minimal-light) theme.
 The production version can be found [here](https://www.justus-inhoffen.com).
 
 Table of Contents:
