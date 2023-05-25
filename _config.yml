@@ -28,12 +28,12 @@ description: Financial Economist and Data Scientist
 
 # Links
 social_media:
-  - type: google_scholar
-    url: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
-  - type: github
-    url: https://github.com/jinhoffen
   - type: linkedin
     url: https://www.linkedin.com/in/jinhoffen/
+  - type: github
+    url: https://github.com/jinhoffen
+  - type: google_scholar
+    url: https://scholar.google.com/citations?hl=en&user=oHBuwpsAAAAJ
 
 # Images
 avatar: profile.png
