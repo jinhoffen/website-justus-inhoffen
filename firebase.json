@@ -5,6 +5,21 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/.*",
+        "destination": "https://www.justus-inhoffen.com/:splat",
+        "type": 301
+      }, {
+        "source" : "/blog.html",
+        "destination" : "/blog/",
+        "type" : 301
+      }, {
+        "source" : "/research.html",
+        "destination" : "/research/",
+        "type" : 301
+      }
     ]
   },
   "emulators": {
