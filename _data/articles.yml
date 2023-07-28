@@ -22,7 +22,7 @@ workingpapers:
     url: https://dx.doi.org/10.2139/ssrn.4412733
     teaser_file_extension: png
     badge: Mutual Funds
-    status: Revise & Resubmit
+    status: Revise & Resubmit at Journal of Banking & Finance
     coauthors:
       - name: Tanja Artiga González
         url: https://sites.google.com/view/tartigagonzalez
@@ -33,17 +33,20 @@ workingpapers:
     abstract: We study the relationship between crowding and performance in the active mutual fund industry. Using the equity holdings overlap of 17,364 global funds, we find that funds that crowd into the same stocks underperform passive benchmark funds by 1.4% per year. The negative returns to crowding can at least in part be explained by excess demand for liquidity and the associated discount for holding liquid stocks. We show that our measure of crowding contains novel information about performance that is not reflected in other variables that describe funds' investment environment, such as fund size and style. Our findings suggest that crowding of investment opportunities is important for understanding diminishing returns.
   - id: InhoffenVanLelyveld_CollateralReuse
     title: Re-use and Safe Asset Scarcity in the European Repo Market
+    url: https://dx.doi.org/10.2139/ssrn.4522361
     teaser_file_extension: png
-    badge: Money Market
-    status: Coming Soon
+    badge: Collateral Re-use
+    status: Submitted
     coauthors:
       - name: Iman van Lelyveld
         url: https://imanvanlelyveld.com
-    abstract: This paper shows that dealer banks alleviate the scarcity of safe assets through intermediation in the European repo market. Using transaction data, we construct the first measure of the European collateral re-use rate at the bank and security level. We find that banks considerably increase re-use in response to a reduction in the free-floating amount of government bonds. Dealers accommodate clients' demand for safe assets rather than for liquidity and make a profit through a spread in repo rates. Yet, dealers also re-use collateral to source liquidity by negotiating a positive haircut differential and thus become exposed to collateral runs. Our results contribute to the policy debate on trade-offs between shock absorption and financial stability risks of collateral re-use.
+    abstract: We construct the first measure of collateral re-use at the bank and bond level for the European repo market using a regulatory transaction dataset. We show that banks materially increase the rate of re-use in response to tightened asset scarcity induced by the Eurosystem's asset purchase program. We find that dealers accommodate clients' demand for safe assets rather than liquidity and profit from the repo rate spread. Yet, dealers also re-use collateral to source liquidity which exposes them to collateral runs. Our results contribute to the policy debate on trade-offs between shock absorption and financial stability risks of collateral re-use.
   - id: Inhoffen_RiskSpillover
     title: Risk Spillovers in the Eurozone Financial Sectors
     teaser_file_extension: png
     badge: Financial Stability
+    status: Coming Soon
+    code: https://github.com/jinhoffen/spatial-durbin-model
 policy:
   - title: "Low for Long: Side Effects of Negative Interest Rates"
     url: https://data.europa.eu/doi/10.2861/980796
