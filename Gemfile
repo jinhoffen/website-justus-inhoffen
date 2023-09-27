@@ -20,3 +20,6 @@ gem 'jekyll-last-modified-at'
 
 # http toolkit
 gem "webrick", "~> 1.8"
+
+# redirect
+gem 'jekyll-redirect-from'

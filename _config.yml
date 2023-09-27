@@ -17,6 +17,7 @@ plugins:
   - jekyll-webp
   - jekyll-sitemap
   - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 # Modified-at plugin
 last-modified-at:
