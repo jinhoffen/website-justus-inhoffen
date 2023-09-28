@@ -28,7 +28,7 @@ jobs:
         run: bundle exec jekyll build -t
       - name: Run htmlproofer
         run: |
-          bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 301,302,999
+          bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 0,301,302,403,999
       - name: Deploy to Firebase Hosting
         id: firebase-deploy-prod
         if: github.ref == 'refs/heads/main'

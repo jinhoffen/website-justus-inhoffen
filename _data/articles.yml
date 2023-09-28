@@ -13,13 +13,13 @@ publications:
         url: https://sites.google.com/site/csiemroth/
       - name: Philipp Zahn
         url: https://www.philipp-zahn.com
-    code: https://dx.doi.org/10.17632/668gj7dwn7.1
+    code: https://data.mendeley.com/datasets/668gj7dwn7
     wp: https://repository.essex.ac.uk/23554/1/peereffects_v38-revision2.pdf
     abstract: Minimum prices above the competitive level can lead to allocative inefficiencies. We investigate whether this effect is more pronounced when decision makers are influenced by their social environment. Using data of minimum prices for renewable energy production in Germany, we test if individual decisions to install photovoltaic systems are affected by the investment decisions of others in the area. We implement a propensity score matching routine on municipality level and estimate that existing panels in the municipality increase the probability and number of further installations considerably, even in areas with minimal solar radiation. Thus, social interaction can add secondary inefficiencies to the known allocative problems of minimum prices. The social interaction effect is stronger in areas with more solar radiation and less unemployment. A larger number of existing systems and more concentrated installations increase the social effect further.
 workingpapers:
   - id: ArtigaGonzalezDyakovInhoffenWipplinger_CrowdingMutualFunds
     title: Crowding of International Mutual Funds
-    url: https://dx.doi.org/10.2139/ssrn.4412733
+    url: https://ssrn.com/abstract=4412733
     teaser_file_extension: png
     badge: Mutual Funds
     status: Revise & Resubmit at Journal of Banking & Finance
@@ -33,7 +33,7 @@ workingpapers:
     abstract: We study the relationship between crowding and performance in the active mutual fund industry. Using the equity holdings overlap of 17,364 global funds, we find that funds that crowd into the same stocks underperform passive benchmark funds by 1.4% per year. The negative returns to crowding can at least in part be explained by excess demand for liquidity and the associated discount for holding liquid stocks. We show that our measure of crowding contains novel information about performance that is not reflected in other variables that describe funds' investment environment, such as fund size and style. Our findings suggest that crowding of investment opportunities is important for understanding diminishing returns.
   - id: InhoffenVanLelyveld_CollateralReuse
     title: Re-use and Safe Asset Scarcity in the European Repo Market
-    url: https://dx.doi.org/10.2139/ssrn.4522361
+    url: https://ssrn.com/abstract=4522361
     teaser_file_extension: png
     badge: Collateral Re-use
     status: Submitted
@@ -49,7 +49,7 @@ workingpapers:
     code: https://github.com/jinhoffen/spatial-durbin-model
 policy:
   - title: "Low for Long: Side Effects of Negative Interest Rates"
-    url: https://data.europa.eu/doi/10.2861/980796
+    url: https://op.europa.eu/en/publication-detail/-/publication/905725f2-e05e-11eb-895a-01aa75ed71a1
     journal: European Parliament, Directorate-General for Internal Policies of the Union
     year: 2021
     coauthors:
@@ -58,7 +58,7 @@ policy:
       - name: Thomas Url
         url: https://www.wifo.ac.at/thomas_url
   - title: "Financial stability: New, detailed datasets allow for innovation of stress tests"
-    url: https://doi.org/10.18723/diw_dwr:2020-3-1
+    url: https://www.diw.de/sixcms/detail.php?id=diw_01.c.702889.de
     journal: DIW Weekly Report
     year: 2020
     coauthors:
