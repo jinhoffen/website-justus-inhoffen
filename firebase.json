@@ -20,6 +20,10 @@
         "destination" : "/research/",
         "type" : 301
       }, {
+        "source" : "/redirect_phd_chapter_1.html",
+        "destination" : "/phd-dissertation/chapter/1",
+        "type" : 301
+      }, {
         "source" : "/redirect_phd_chapter_2.html",
         "destination" : "/phd-dissertation/chapter/2",
         "type" : 301
